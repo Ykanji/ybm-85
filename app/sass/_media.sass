@@ -1,0 +1,754 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+	.menu
+		.logo
+			padding: 30px 10px
+			width: 230px
+		.header-menu
+			ul
+				margin: 5px 0px
+				li
+					font-size: 14px
+		.main
+			font-size: 14px
+			line-height: 1.1em
+			.address
+				p
+					margin: 0px 0px 5px 0px
+				span
+			.phone
+				p
+					margin: 15px 0px 0px 0px
+			.cta-menu
+				strong
+					display: none
+				.button
+					margin: 20px 0px
+					font-size: 16px
+					padding: 20px 10px
+
+	.menu-f
+		.logo
+			padding: 10px 10px
+			width: 230px
+		.header-menu
+			ul
+				li
+					font-size: 16px
+		.main
+			.address
+				margin-top: 5px
+				p
+				span
+			.phone
+				margin-top: 5px
+				p
+			.cta-menu
+				.button
+					margin-top: 0px
+					font-size: 16px
+					&:active
+						margin-top: 3px
+
+	.s-steps
+		.h2-block
+			&::before
+				display: none
+
+
+	.s-reviews
+		.slider-container
+			&::before
+			.rev-slider
+				text-align: center
+				&::after
+				.my-item
+					left: 0px
+					width: 480px
+					.parallelogram
+						width: 480px
+					.info
+						left: 0px
+						width: 350px
+						img
+							display: inline-block
+							border-radius: 50px
+							margin: 10px 100px 10px 0px
+							opacity: 0.5
+						p
+							margin: 10px
+
+		.nav-container
+			max-width: 1170px
+			margin: 0 auto
+			position: relative
+			.slider-nav
+				position: absolute
+				width: 100%
+				z-index: 20
+				font-size: 180px
+				&::before
+					width: 0px
+					height: 0px
+					content: ''
+					position: absolute
+					z-index: 10
+					color: $accent
+					top: -65px
+					left: 380px
+					font-size: 130px
+				&::after
+					width: 0px
+					height: 0px
+					content: ''
+					position: absolute
+					z-index: 10
+					color: $accent
+					top: 170px
+					right: 415px
+					font-size: 130px
+				div
+					cursor: pointer
+					position: absolute
+					color: rgba($accent, 0.8)
+					height: 0px
+					&:last-child
+						right: 10%
+					&:first-child
+						left: 10%
+					&:hover
+						color: $accent
+
+	.center
+		opacity: 1!important
+		p
+			color: #000 !important
+		img
+			opacity: 1 !important
+		.parallelogram
+			background-color: #f6f6f6
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.menu
+		.logo
+			padding: 10px 10px
+			width: 160px
+		.header-menu
+			margin-top: 10px
+			border-bottom: 0px solid $accent
+			ul
+				display: inline
+				width: 100px
+				text-align: center
+				li
+					display: inline-block
+					font-size: 16px
+					padding: 0px 10px
+		.main
+			display: none
+
+	.slider
+		.owl-dots
+			top: 420px
+			.owl-dot
+				&.active
+		.slide
+			.slide-bg
+				padding-top: 90px
+				min-height: 450px
+				.img-ybm
+					width: 320px
+					margin-top: 60px
+				.img-screw
+					width: 270px
+					margin-top: 20px
+					margin-left: 0px
+				.h1
+					margin: 0px 0px 0px
+					&::before
+						display: none
+				.h2
+					margin: 0px 0px 20px
+					font-size: 21px
+				.item
+					margin-bottom: 15px
+					line-height: 1.2em
+					strong
+					.fa
+					.fa-lock
+					.fa-truck
+					p
+					.screw
+				.button-header
+					padding-top: 0px
+					margin-bottom: 30px
+					.button
+
+	.s-slider
+		.naw-wrap-container
+			display: none
+
+	.menu-h
+		display: none
+
+	.s-application
+		.column1
+			width: 100%
+		.column2
+			width: 100.5%
+			.img
+				margin: 9px 0px
+
+	.s-steps
+		.h2-block
+			&::before
+				display: none
+		.z-index
+			position: relative
+			z-index: 20
+			.fa
+				text-align: center
+				font-size: 55px
+				margin-bottom: 5px
+			.fa-mobile
+				font-size: 70px
+				margin-bottom: 0px
+			.fa-calendar-check-o
+				margin-top: 10px
+			.h3
+				margin: 0px
+			p
+				margin-top: 5px
+				margin-bottom: 45px
+
+	.s-cta
+		.img-parallax
+		.overley
+				width: 100%
+				background-color: rgba(#fff, .7)
+		.h2
+			margin-right: 0px
+			margin-top: 50px
+			font-size: 22px
+			padding: 10px 20px
+			text-align: left
+			strong
+		.h3
+			margin-top: 30px
+			margin-bottom: 30px
+			z-index: 10
+		.cta-main
+			padding-bottom: 50px
+			.button-cta
+				text-align: center
+				button
+					padding: 15px 15px
+					z-index: 1
+					border: none
+					outline: none
+					display: inline-block
+					font-size: 23px
+					margin-left: 25px
+
+	.s-cta-service
+		.img-parallax
+		.overley
+				width: 100%
+				background-color: rgba(#fff, .7)
+		.h2
+			margin-right: 0px
+			margin-top: 50px
+			font-size: 22px
+			padding: 10px 20px
+			text-align: left
+			strong
+		.h3
+			margin-top: 30px
+			margin-bottom: 30px
+			z-index: 10
+		.cta-main
+			padding-bottom: 50px
+			.button-cta
+				text-align: center
+				button
+					padding: 15px 15px
+					z-index: 1
+					border: none
+					outline: none
+					display: inline-block
+					font-size: 23px
+					margin-left: 25px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.menu
+		.logo
+			display: block
+			margin: 10px auto
+			width: 250px
+		.header-menu
+			margin-top: 10px
+			border-bottom: 0px solid $accent
+			ul
+				display: inline
+				width: 100px
+				text-align: center
+				li
+					display: inline-block
+					font-size: 16px
+					padding: 0px 10px
+		.main
+			display: none
+
+	.slider
+		.owl-dots
+			top: 520px
+			.owl-dot
+				&.active
+		.slide
+			.slide-bg
+				padding-top: 90px
+				min-height: 550px
+				.img-ybm
+					display: none
+				.img-screw
+					display: none
+				.h1
+					margin: 135px 0px 0px
+
+	.s-application
+		display: block
+		position: relative
+		background-color: #f6f6f6
+		padding-bottom: 30px
+		.column1
+			.item1
+				.item1-1
+					width: 98%
+					.img
+						margin: 0px 10px
+				.item1-2
+					width: 98%
+					.img
+						margin: 5px 10px
+			.item2
+				width: 98%
+				.img
+					margin: 0px 10px
+		.column2
+			width: 98%
+			.img
+				margin: 5px 10px
+
+
+	.s-reviews
+		.slider-container
+			.rev-slider
+				text-align: center
+				&::after
+				.my-item
+					left: 0px
+					width: 480px
+					.parallelogram
+						width: 480px
+					.info
+						left: 0px
+						width: 350px
+						img
+							display: inline-block
+							border-radius: 50px
+							margin: 10px 100px 10px 0px
+							opacity: 0.5
+						p
+							margin: 10px
+		.nav-container
+			max-width: 1170px
+			margin: 0 auto
+			position: relative
+			.slider-nav
+				position: absolute
+				width: 100%
+				z-index: 20
+				font-size: 130px
+				&::before
+				&::after
+				div
+					margin-top: 30px
+					cursor: pointer
+					position: absolute
+					color: rgba($accent, 0.8)
+					height: 0px
+					&:last-child
+						right: 3%
+					&:first-child
+						left: 3%
+					&:hover
+						color: $accent
+
+	.s-managers
+		&::after
+		.h2-block
+			.h2-item
+				.h2
+		.normal
+			.img-wraper
+				position: relative
+				display: inline-block
+				.img-manager
+			.info
+				display: inline-block
+				margin-left: 0px
+				.position
+					margin-left: 100px
+					margin-bottom: 10px
+				.name
+				.parallelogram
+				.phone
+					text-align: center
+				.mail
+					text-align: center
+		.revers
+			.img-wraper
+				position: relative
+				margin-left: 0px
+				.img-manager
+			.info
+				margin-left: 130px
+				.position
+					margin-left: -10px
+					margin-bottom: 10px
+				.name
+					margin-left: -15px
+				.parallelogram
+				.phone
+				.mail
+
+.my-footer
+	.address
+		text-align: center
+	.phone
+		text-align: center
+		p
+	.logo
+		text-align: center
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+	.h2-block
+		.h2-item
+			.h2
+				font-size: 18px
+				strong
+					font-size: 18px
+				&::before
+
+	.menu
+		.logo
+			display: block
+			margin: 10px auto
+			width: 180px
+		.header-menu
+			margin-top: 10px
+			border-bottom: 0px solid $accent
+			padding-bottom: 13px
+			ul
+				display: inline
+				width: 100px
+				text-align: center
+				li
+					display: inline-block
+					font-size: 16px
+					padding: 0px 10px
+		.main
+			display: none
+
+	.slider
+		.owl-dots
+			top: 600px
+			.owl-dot
+				&.active
+		.slide
+			.slide-bg
+				min-height: 625px
+				padding-top: 90px
+				.img-ybm
+					display: none
+				.img-screw
+					display: none
+				.h1
+					font-size: 16px
+					margin: 145px 0px 0px
+				.h2
+					margin: 0px 0px 20px
+					font-size: 21px
+				.item
+					margin-bottom: 15px
+					line-height: 1.2em
+					padding-left: 0px
+					strong
+					.fa
+						margin-right: 10px
+					.fa-lock
+					.fa-truck
+					p
+						font-size: 14px
+					.screw
+				.button-header
+					padding-top: 0px
+					margin-bottom: 50px
+					.button
+
+	.s-specificaitons
+		img
+			margin: 0px auto 20px
+			width: 100%
+			height: auto
+			max-width: 600px
+		table
+			line-height: 1.5em
+			margin-bottom: 25px
+			tr
+				th
+					text-align: left
+					padding: 10px 15px
+					font-family: $accent-font
+					font-weight: 300px
+					font-size: 16px
+					color: $main
+					background-color: #f6f6f6
+			tr
+				td
+					padding: 0px 15px
+					strong
+						color: $accent
+			.tr-line
+				background-color: #f6f6f6
+				height: 10px
+
+	.s-steps
+		.h2-block
+			&::before
+				display: none
+		.z-index
+			position: relative
+			z-index: 20
+			.fa
+				color: lighten($accent, 13%)
+				text-align: center
+				font-size: 55px
+				margin-bottom: 5px
+			.fa-mobile
+				font-size: 70px
+				margin-bottom: 0px
+			.fa-calendar-check-o
+				margin-top: 10px
+			.h3
+				margin: 0px
+				font-family: $accent-font
+				font-weight: 300
+				color: lighten($accent1, 10%)
+			p
+				margin-bottom: 30px
+				font-size: 14px
+
+	.s-cta
+		.img-parallax
+		.overley
+				width: 100%
+				background-color: rgba(#fff, .7)
+		.h2
+			margin-right: 0px
+			margin-top: 50px
+			font-size: 18px
+			padding: 10px 20px
+			text-align: left
+			strong
+		.h3
+			margin-top: 15px
+			margin-bottom: 15px
+			font-size: 20px
+			z-index: 10
+		.cta-main
+			font-size: 
+			padding-bottom: 50px
+			div
+				p
+					font-size: 16px
+				input
+					font-size: 16px
+			.button-cta
+				text-align: center
+				button
+					padding: 10px 10px
+					font-size: 18px
+
+	.s-cta-service
+		.img-parallax
+		.overley
+				width: 100%
+				background-color: rgba(#fff, .7)
+		.h2
+			margin-right: 0px
+			margin-top: 50px
+			font-size: 18px
+			padding: 10px 20px
+			text-align: left
+			strong
+		.h3
+			margin-top: 15px
+			margin-bottom: 15px
+			font-size: 20px
+			z-index: 10
+		.cta-main
+			font-size: 
+			padding-bottom: 50px
+			div
+				p
+					font-size: 16px
+				input
+					font-size: 16px
+			.button-cta
+				text-align: center
+				button
+					padding: 10px 10px
+					font-size: 18px
+
+	.s-reviews
+		.slider-container
+			&::before
+				display: none
+			.rev-slider
+				text-align: center
+				&::after
+					display: none
+				.my-item
+					left: 0px
+					width: 250px
+					.parallelogram
+						display: none
+					.info
+						left: 0px
+						width: 250px
+						img
+							display: inline-block
+							border-radius: 50px
+							margin: 10px auto
+							opacity: 0.5
+						p
+							margin: 10px
+		.nav-container
+			max-width: 1170px
+			margin: 0 auto
+			position: relative
+			.slider-nav
+				z-index: 20
+				font-size: 100px
+				&::before
+				&::after
+				div
+					top: -50px
+					height: 0px
+					&:last-child
+						right: 10%
+					&:first-child
+						left: 10%
+					&:hover
+						color: $accent
+
+	.s-managers
+		&::after
+		.h2-block
+			.h2-item
+				.h2
+		.normal
+			.img-wraper
+				position: relative
+				display: inline-block
+				width: 230px
+				height: 150px
+				margin-left: 0px
+				.img-manager
+					width: 300px
+			.info
+				display: inline-block
+				margin-left: -20px
+				.position
+					margin-left: 100px
+					margin-bottom: 10px
+				.name
+				.parallelogram
+				.phone
+					text-align: center
+				.mail
+					text-align: center
+		.revers
+			.img-wraper
+				width: 230px
+				height: 150px
+				position: relative
+				margin-left: 0px
+				.img-manager
+					width: 300px
+			.info
+				margin-left: 70px
+				.position
+					margin-left: -10px
+					margin-bottom: 10px
+				.name
+					margin-left: -15px
+				.parallelogram
+				.phone
+				.mail
+
+.my-footer
+	.address
+		text-align: left
+		margin-bottom: 20px
+	.phone
+		text-align: right
+		margin-bottom: 20px
+		p
+	.logo
+		text-align: center
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
